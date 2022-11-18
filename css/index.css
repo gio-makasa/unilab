@@ -17,7 +17,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 86px;
+  padding: 0;
 }
 
 nav img {
@@ -744,10 +744,11 @@ footer #rights {
 }
 
 @media only screen and (max-width: 768px) {
-  header {
-    padding: 0;
+  nav {
+    width: 100%;
+    padding: 0 !important;
   }
-  header ul {
+  nav ul {
     position: fixed;
     top: 0;
     right: 0;
@@ -761,10 +762,10 @@ footer #rights {
     flex-direction: column;
     padding: 0;
   }
-  header ul #closeMenu {
+  nav ul #closeMenu {
     display: block;
   }
-  header .fa-bars {
+  nav .fa-bars {
     display: block;
   }
   .slideshow-container #slide1 .price {
